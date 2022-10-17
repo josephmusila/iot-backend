@@ -37,4 +37,4 @@ class QueryData(generics.ListAPIView):
 
     def get(self, request, *args, **kwargs):
         QueryData.queryset=models.Sensors.objects.filter(date_created=kwargs["date_created"])
-        return self.list(request, *args, **kwargs)
+        return self.list(request, *args, **kwargs)                                                                                 
